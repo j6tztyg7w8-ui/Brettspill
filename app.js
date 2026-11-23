@@ -6,7 +6,26 @@ const spillerListe = document.getElementById("spillerListe");
 // Alle spillerne
 let spillere = [];
 
+// Tegner spillerlista på siden
+function visSpillere() {
+  spiller.liste.innerHTML = "";
+
+  for (const spiller of spillere) {
+    const li = document.createElement("li");
+    li.textContent = spiller;
+    spillerListe.appendChild(li);
+  }
+}
+
 // Når man trykker på knappen
 leggTilKnapp.addEventListener("click", function () {
-  console.log("Knappen ble trykket!");
+  const navn = navnFelt.value.trim();
+
+  if (navn === ""){
+    return;
+  }
+
+  spillere.push(navn);
+  navnFelt.value = "";
+  visSpillere();
 });
