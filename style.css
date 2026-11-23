@@ -3,4 +3,11 @@ body {
   max-width: 600px;
   margin: 0 auto;
   padding: 16px;
+  background-color: #faf7f2;
+  color: #333333
 }
+
+h1 {
+  color: #2e7d32;
+}
+  
