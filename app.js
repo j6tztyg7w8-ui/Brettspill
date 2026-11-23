@@ -8,7 +8,7 @@ let spillere = [];
 
 // Tegner spillerlista på siden
 function visSpillere() {
-  spiller.liste.innerHTML = "";
+  spillerliste.innerHTML = "";
 
   for (const spiller of spillere) {
     const li = document.createElement("li");
