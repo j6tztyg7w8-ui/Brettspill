@@ -4,7 +4,7 @@ const leggTilKnapp = document.getElementById("leggTilKnapp");
 const spillerListe = document.getElementById("spillerListe");
 
 // Alle spillerne
-let spillere = [];
+let spillere = JSON.parse(localStorage.getItem("brettspill-spillere")) || [];
 
 // Tegner spillerlista på siden
 function visSpillere() {
@@ -36,3 +36,6 @@ leggTilKnapp.addEventListener("click", function () {
   navnFelt.value = "";
   visSpillere();
 });
+
+// Vis lagrede spillere når siden åpnes
+visSpillere();
