@@ -32,6 +32,7 @@ leggTilKnapp.addEventListener("click", function () {
   }
 
   spillere.push(navn);
+  lagreSpillere();
   navnFelt.value = "";
   visSpillere();
 });
