@@ -20,8 +20,8 @@ function visSpillere() {
 //Lagrer spillerlisten i nettsidens notatblokk
 function lagreSpillere() {
   const tekst = JSON.stringify(spillere);
-  localStorage.setItem("brettspill-spillere", "tekst);
-                }
+  localStorage.setItem("brettspill-spillere", tekst);
+}
 
 // Når man trykker på knappen
 leggTilKnapp.addEventListener("click", function () {
