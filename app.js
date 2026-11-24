@@ -8,7 +8,7 @@ let spillere = [];
 
 // Tegner spillerlista på siden
 function visSpillere() {
-  spillerliste.innerHTML = "";
+  spillerListe.innerHTML = "";
 
   for (const spiller of spillere) {
     const li = document.createElement("li");
@@ -16,6 +16,12 @@ function visSpillere() {
     spillerListe.appendChild(li);
   }
 }
+
+//Lagrer spillerlisten i nettsidens notatblokk
+function lagreSpillere() {
+  const tekst = JSON.stringify(spillere);
+  localStorage.("brettspill-spillere", "tekst);
+                }
 
 // Når man trykker på knappen
 leggTilKnapp.addEventListener("click", function () {
