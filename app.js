@@ -3,7 +3,7 @@ const navnFelt = document.getElementById("navnFelt");
 const leggTilKnapp = document.getElementById("leggTilKnapp");
 const spillerListe = document.getElementById("spillerListe");
 const spillFelt = document.getElementById("spillFelt");
-const poengFelter = doucment.getElementById("poengFelter");
+const poengFelter = document.getElementById("poengFelter");
 const lagreSpillKnapp = document.getElementById("lagreSpillKnapp");
 
 // Alle spillerne
