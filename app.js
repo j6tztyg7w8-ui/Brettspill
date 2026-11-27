@@ -31,18 +31,18 @@ function visPoengfelter(){
 poengFelter.innerHTML = "";
 
   for (const spiller of spillere) {
-  const rad = document.createElement("p");
-  const etikett = document.createElement("label");
-  etikett.textContent = spiller + ": ";
+    const rad = document.createElement("p");
+    const etikett = document.createElement("label");
+    etikett.textContent = spiller + ": ";
 
-  const felt = document.createElement("input");
-  felt.type = "number";
-  felt.className = "poeng-felt";
-  felt.dataset.spiller = spiller;
+    const felt = document.createElement("input");
+    felt.type = "number";
+    felt.className = "poeng-felt";
+    felt.dataset.spiller = spiller;
 
-  etikett.appendChild(felt);
-  rad.appendChild(etikett);
-  poengFelter.appendChild(rad);
+    etikett.appendChild(felt);
+    rad.appendChild(etikett);
+    poengFelter.appendChild(rad);
   }
 }
 
